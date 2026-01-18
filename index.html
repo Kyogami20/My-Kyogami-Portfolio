@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyogami</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@300..800&family=Playfair+Display:wght@400..900&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="loading-screen">
+        <div class="loading-content">
+            <i class="fa-solid fa-laptop-code fa-5x main-icon hidden"></i>
+
+            <h1 id="loading-text" class="hidden">MY PROFILE</h1>
+
+            <div class="sub-icons">
+                <i class="fa-brands fa-github fa-2x hidden"></i>
+                <i class="fa-solid fa-code fa-2x hidden"></i>
+                <i class="fa-solid fa-user fa-2x hidden"></i>
+            </div>
+
+            <h2 id="designer-text" class="hidden">Designed by Kyogami</h2>
+        </div>
+    </div>
+
+    <header class="header-list">
+        <div class="profile-picture">
+            <img src="images/generalPic/Kyogami.jpg" alt="Kyogami">
+        </div>
+
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="active">
+                    <a href="#home" class="nav-link">
+                        <i class="fa-regular fa-house" aria-hidden="true"></i>
+                        <span class="label">Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about" class="nav-link">
+                        <i class="fa-regular fa-address-card" aria-hidden="true"></i>
+                        <span class="label">About</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#project" class="nav-link">
+                        <i class="fa-regular fa-folder-open" aria-hidden="true"></i>
+                        <span class="label">Projects</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#stack" class="nav-link">
+                        <i class="fa-solid fa-code" aria-hidden="true"></i>
+                        <span class="label">Stack</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="nav-link">
+                        <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                        <span class="label">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="theme-toggle">
+            <button id="theme-light" class="theme-button" title="Light Mode">
+                <i class="fa-solid fa-sun"></i>
+            </button>
+            <button id="theme-dark" class="theme-button" title="Dark Mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- HOME SECTION -->
+
+    <section class="home" id="home">
+        <div class="home-container">
+
+            <div class="home-content">
+                <h1>Hi, I'm Kyogami</h1>
+                <h3>Frontend Developer</h3>
+
+                <p class="home-description">
+                    Engineering student passionate about software development and continuous learning.
+                    Focused on strengthening my programming skills especially in Cloud Computing
+                    and web development, while also improving key soft skills for effective teamwork.
+                </p>
+
+                <div class="home-meta">
+                    <p><i class="fa-solid fa-location-dot"></i> Based in Peru</p>
+                    <p><i class="fa-solid fa-briefcase"></i> Available Now</p>
+                </div>
+
+                <div class="home-actions">
+                    <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                        <i class="fa-solid fa-arrow-right"></i> Hire Me
+                    </button>
+                    <button class="btn-secondary" onclick="window.open('documents/Quispe_Mejia_Ricardo_CV.pdf', '_blank')">
+                        <i class="fa-solid fa-download"></i> Download CV
+                    </button>
+                </div>
+
+                <hr>
+
+                <div class="home-social">
+                    <span>Follow me:</span>
+                    <ul>
+                        <li><a href="https://github.com/Kyogami20"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="https://discordapp.com/users/958474702484037633"><i
+                                    class="fa-brands fa-discord"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/ricardo-quispe-mej%C3%ADa-9bab78323/"><i
+                                    class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/kyogami.20/"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <img class="home-image" src="images/generalPic/img2.jpg" alt="Kyogami profile illustration">
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+
+    <section class="about" id="about">
+        <div class="about-container">
+
+            <p id="about-text">ABOUT ME</p>
+
+            <div class="about-flexcontainer">
+                <div class="about-content">
+
+                    <div class="about-title">
+                        <h1>Building Meaningful</h1>
+                        <h1>Digital Experiences</h1>
+                    </div>
+                    
+                    <hr>
+                
+                    <div class="about-info">
+                        <p>
+                            I’m a systems engineering student interested in how software is built and how technology can 
+                            solve real problems. I focus on improving my programming skills while exploring web development,
+                            cloud fundamentals, and basic AI concepts. I also work on strengthening communication, teamwork, 
+                            and adaptability.
+                        </p>
+                        <p>
+                            Beyond coding, I enjoy learning new tools, improving personal projects, and finding better ways 
+                            to approach challenges. I believe in continuous learning and in building solutions that create 
+                            a positive impact as I grow both technically and personally.
+                        </p>
+                    </div>
+
+                    <h2>What Drives Me</h2>
+
+                    <div class="card">
+                        <div class="c1">
+                            <h3><i class="fa-solid fa-code"></i> Languages</h3>
+                            <p>Spanish (Native), English</p>
+                        </div>
+                        <div class="c1">
+                            <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                            <p>UNMSM in Systems Engineering</p>
+                        </div>
+                        <div class="c1">
+                            <h3><i class="fa-solid fa-folder-open"></i> Projects</h3>
+                            <p>Built more than 5 projects</p>
+                        </div>
+                    </div>
+                </div>
+                <img class="about-image" src="images/generalPic/img.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+
+    <section class="project" id="project">
+        <div class="project-container">
+            <p id="project-text">PROJECTS</p>
+            <h1>Featured Work</h1>
+
+            <hr>
+
+            <div class="info-pro">
+                <p>A showcase of my recent projects demonstrating expertise in full-stack
+                development, modern frameworks, and creative problem-solving.</p>
+            </div>
+
+            <div class="project-content">
+                <div class="project-card">
+                    <img class="img-project" src="images/generalPic/Cleveroad.jpg" alt="E-Commerce Website">
+                    <h3>Online Shop</h3>
+                    <p>Modern online store with product filtering, cart, and payment system.</p>
+                    <div class="skills">
+                        <a href="#">HTML</a>
+                        <a href="#">CSS</a>
+                        <a href="#">JavaScript</a>
+                    </div>
+                    <div class="btns">
+                        <a href="#" class="btn"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img class="img-project" src="images/generalPic/Capture d'écran 2025-10-22 182207.png" alt="Portfolio Website">
+                    <h3>Portfolio Website</h3>
+                    <p>Personal portfolio to showcase my design and coding projects.</p>
+                    <div class="skills">
+                        <a href="#">HTML</a>
+                        <a href="#">CSS</a>
+                        <a href="#">Bootstrap</a>
+                    </div>
+                    <div class="btns">
+                        <a href="#" class="btn"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img class="img-project" src="images/generalPic/Weather Forecast Dashboard.jpg" alt="Weather App">
+                    <h3>Weather App</h3>
+                    <p>Responsive app showing real-time weather data using API integration.</p>
+                    <div class="skills">
+                        <a href="#">HTML</a>
+                        <a href="#">CSS</a>
+                        <a href="#">JavaScript</a>
+                    </div>
+                    <div class="btns">
+                        <a href="#" class="btn"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img class="img-project" src="images/generalPic/WordPress dashboard design concept.jpg" alt="Blog Website">
+                    <h3>Blog Website</h3>
+                    <p>Clean and simple blogging platform with markdown support.</p>
+                    <div class="skills">
+                        <a href="#">HTML</a>
+                        <a href="#">Tailwind</a>
+                        <a href="#">JavaScript</a>
+                    </div>
+                    <div class="btns">
+                        <a href="#" class="btn"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img class="img-project" src="images/generalPic/Game Dashboard Design.jpg" alt="Game Landing Page">
+                    <h3>Game Site</h3>
+                    <p>Landing page for a game with animations and parallax effects.</p>
+                    <div class="skills">
+                        <a href="#">HTML</a>
+                        <a href="#">CSS</a>
+                        <a href="#">GSAP</a>
+                    </div>
+                    <div class="btns">
+                        <a href="#" class="btn"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img class="img-project" src="images/generalPic/Task manager app.jpg" alt="Task Manager">
+                    <h3>Task Manager</h3>
+                    <p>Task tracking web app with CRUD features and clean UI.</p>
+                    <div class="skills">
+                        <a href="#">HTML</a>
+                        <a href="#">CSS</a>
+                        <a href="#">JavaScript</a>
+                    </div>
+                    <div class="btns">
+                        <a href="#" class="btn"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="infinitive-logo" id="stack">
+        <div class="infinitive-content">
+            <p>STACK</p>
+            <h1>My Tech Stack</h1>
+            <div class="carousel">
+                <div class="group">
+                    <img class="logo" src="images/icons/c-.png" alt="C++">
+                    <img class="logo" src="images/icons/java.png" alt="Java">
+                    <img class="logo" src="images/icons/python.png" alt="Python">
+                    <img class="logo" src="images/icons/js.png" alt="javaScript">
+                    <img class="logo" src="images/icons/text.png" alt="CSS">
+                    <img class="logo" src="images/icons/html.png" alt="Html">
+                    <img class="logo" src="images/icons/c-.png" alt="C++">
+                    <img class="logo" src="images/icons/java.png" alt="Java">
+                    <img class="logo" src="images/icons/python.png" alt="Python">
+                    <img class="logo" src="images/icons/js.png" alt="javaScript">
+                    <img class="logo" src="images/icons/text.png" alt="CSS">
+                    <img class="logo" src="images/icons/html.png" alt="Html">
+                    <img class="logo" src="images/icons/mysql.png" alt="Mysql">
+                </div>
+                <div aria-hidden class="group">
+                    <img class="logo" src="images/icons/c-.png" alt="C++">
+                    <img class="logo" src="images/icons/java.png" alt="Java">
+                    <img class="logo" src="images/icons/python.png" alt="Python">
+                    <img class="logo" src="images/icons/js.png" alt="javaScript">
+                    <img class="logo" src="images/icons/text.png" alt="CSS">
+                    <img class="logo" src="images/icons/html.png" alt="Html">
+                    <img class="logo" src="images/icons/c-.png" alt="C++">
+                    <img class="logo" src="images/icons/java.png" alt="Java">
+                    <img class="logo" src="images/icons/python.png" alt="Python">
+                    <img class="logo" src="images/icons/js.png" alt="javaScript">
+                    <img class="logo" src="images/icons/text.png" alt="CSS">
+                    <img class="logo" src="images/icons/html.png" alt="Html">
+                    <img class="logo" src="images/icons/mysql.png" alt="Mysql">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <p>CONTACT</p>
+            <h1>Get in Touch with Me</h1>
+            <div class="contact-content">
+                <div class="contact-info slide-in-left">
+                    <p>I'm always open to discuss exciting projects and new opportunities. Let's collaborate!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>ricardoquisp@outlook.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+51 952 629 836</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Lima, Peru</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/Kyogami20" class="social-link" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ricardo-quispe-mej%C3%ADa-9bab78323/" class="social-link" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://wa.me/51952629836" class="social-link" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form slide-in-right">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required name="user_name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required name="user_email">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-send">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <h2 class="footer-logo">Kyogami</h2>
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="footer-social">
+                <a href="https://github.com/Kyogami20" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ricardo-quispe-mej%C3%ADa-9bab78323/" target="_blank" aria-label="LinkedIn"><i
+                    class="fa-brands fa-linkedin"></i></a>
+                <a href="https://wa.me/51952629836" target="_blank" aria-label="WhatsApp"><i
+                    class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <p class="footer-copy">&copy; 2025 Kyogami. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
